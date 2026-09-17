@@ -1,0 +1,14 @@
+[
+  {
+    "ticket_id": "DEV-0485",
+    "channel": "chat",
+    "subject": "",
+    "body": "One of our developers cannot see a project she should have access to. I have granted her the role twice and it does not seem to take effect.",
+    "received_at": "2026-03-09T17:10:00Z",
+    "customer_tier": "standard",
+    "customer_region": "latin_america",
+    "language_fluency": "fluent",
+    "must_not_auto_respond": false,
+    "customer_id": "TEST-CUST-0485"
+  }
+]

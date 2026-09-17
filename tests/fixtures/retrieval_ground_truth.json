@@ -1,0 +1,12 @@
+[
+  {
+    "ticket_id": "DEV-0485",
+    "intent": "account_access",
+    "expected_doc_ids": [
+      "DOC-ACCT-001"
+    ],
+    "reference_response": "",
+    "must_mention": [],
+    "must_not_claim": []
+  }
+]

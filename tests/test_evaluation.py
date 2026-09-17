@@ -6,9 +6,9 @@ from cloudserve_support.retriever import Retriever
 
 
 def test_retrieval_recall_at_5():
-    tickets = load_tickets("data/development_tickets.json")
+    tickets = load_tickets("tests/fixtures/retrieval_tickets.json")
     documents = load_documents("data/documentation.json")
-    ground_truth = load_ground_truth("data/ground_truth_responses.json")
+    ground_truth = load_ground_truth("tests/fixtures/retrieval_ground_truth.json")
 
     retriever = Retriever(documents)
 

@@ -8,7 +8,8 @@
     "customer_tier": "standard",
     "customer_region": "latin_america",
     "language_fluency": "non_fluent",
-    "must_not_auto_respond": false
+    "must_not_auto_respond": false,
+    "customer_id": "TEST-CUST-0001"
   },
   {
     "ticket_id": "DEV-0002",
@@ -19,7 +20,8 @@
     "customer_tier": "business",
     "customer_region": "latin_america",
     "language_fluency": "fluent",
-    "must_not_auto_respond": false
+    "must_not_auto_respond": false,
+    "customer_id": "TEST-CUST-0002"
   },
   {
     "ticket_id": "DEV-0003",
@@ -30,6 +32,7 @@
     "customer_tier": "enterprise",
     "customer_region": "asia_pacific",
     "language_fluency": "fluent",
-    "must_not_auto_respond": true
+    "must_not_auto_respond": true,
+    "customer_id": "TEST-CUST-0003"
   }
 ]

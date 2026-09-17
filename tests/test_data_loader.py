@@ -2,15 +2,15 @@ from cloudserve_support.data_loader import load_tickets
 from cloudserve_support.models import NormalizedTicket
 
 
-def test_load_development_tickets():
-    tickets = load_tickets("data/development_tickets.json")
+def test_load_sample_tickets():
+    tickets = load_tickets("data/sample_tickets.json")
 
-    assert len(tickets) == 500
+    assert len(tickets) == 3
     assert isinstance(tickets[0], NormalizedTicket)
 
 
 def test_normalized_ticket_text():
-    tickets = load_tickets("data/development_tickets.json")
+    tickets = load_tickets("data/sample_tickets.json")
 
     ticket = tickets[0]
 
