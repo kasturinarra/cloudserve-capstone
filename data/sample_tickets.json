@@ -1,0 +1,35 @@
+[
+  {
+    "ticket_id": "DEV-0001",
+    "channel": "chat",
+    "subject": "",
+    "body": "builds that work last week are now fail during dependency resolution. we are having not change our code at all.",
+    "received_at": "2026-05-23T22:43:00Z",
+    "customer_tier": "standard",
+    "customer_region": "latin_america",
+    "language_fluency": "non_fluent",
+    "must_not_auto_respond": false
+  },
+  {
+    "ticket_id": "DEV-0002",
+    "channel": "chat",
+    "subject": "",
+    "body": "One of our production keys started returning 401 at around yesterday morning without any change on our side. Other keys against the same account are still working.",
+    "received_at": "2026-04-11T15:51:00Z",
+    "customer_tier": "business",
+    "customer_region": "latin_america",
+    "language_fluency": "fluent",
+    "must_not_auto_respond": false
+  },
+  {
+    "ticket_id": "DEV-0003",
+    "channel": "docs_comment",
+    "subject": "Evidence for a compliance review",
+    "body": "Our auditor has asked for access records covering the last six months. Can I export these, and is that period within what you retain?",
+    "received_at": "2026-04-29T10:22:00Z",
+    "customer_tier": "enterprise",
+    "customer_region": "asia_pacific",
+    "language_fluency": "fluent",
+    "must_not_auto_respond": true
+  }
+]

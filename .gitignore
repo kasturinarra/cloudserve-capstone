@@ -1,0 +1,16 @@
+.env
+.venv/
+__pycache__/
+.pytest_cache/
+*.pyc
+storage/*.db
+
+evaluation/results/*.json
+
+data/development_tickets.json
+data/validation_tickets.json
+data/ground_truth_tickets.json
+data/ground_truth_responses.json
+
+src/cloudserve_support.egg-info/
+storage/*.json
