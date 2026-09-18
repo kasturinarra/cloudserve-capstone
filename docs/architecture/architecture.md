@@ -133,7 +133,7 @@ The returned confidence is numeric and bounded between 0 and 1.
 
 The classifier uses a structured JSON response format. Malformed model output is handled rather than being allowed to terminate the complete ticket-processing workflow.
 
-When the LLM provider cannot provide a usable classification, the system falls back to an unclear_request classification with low confidence so that deterministic routing can escalate the ticket.
+When the LLM provider cannot provide a usable classification, the pipeline records an unclear_request classification with low confidence and escalates the ticket through deterministic routing.
 
 This provides a safe failure mode rather than assuming that an unavailable or malformed model response is correct.
 
