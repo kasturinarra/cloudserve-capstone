@@ -559,7 +559,7 @@ The evaluation records the required metrics, including:
 
 ## 18. Evaluation Evidence
 
-The following measurements were obtained from the supplied 200-ticket ground-truth evaluation set.
+The following measurements were obtained from an earlier run of the supplied 200-ticket ground-truth evaluation set. The run completed successfully with the model provider available; subsequent runs may differ because provider availability and LLM output are nondeterministic.
 
 ### Ground-truth evaluation
 
