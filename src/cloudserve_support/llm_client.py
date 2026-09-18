@@ -17,6 +17,7 @@ class LLMClient:
             base_url="https://openrouter.ai/api/v1",
         )
         self.model = os.environ["MODEL_NAME"]
+        self.max_output_tokens = int(os.getenv("MAX_OUTPUT_TOKENS", "1024"))
 
     def complete(self, system_prompt: str, user_prompt: str) -> str:
         try:
@@ -26,6 +27,7 @@ class LLMClient:
                     {"role": "system", "content": system_prompt},
                     {"role": "user", "content": user_prompt},
                 ],
+                max_tokens=self.max_output_tokens,
             )
         except Exception as exc:
             raise LLMProviderError(

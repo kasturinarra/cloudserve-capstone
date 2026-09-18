@@ -37,7 +37,33 @@ class SupportPipeline:
         self.decision_logger = decision_logger or DecisionLogger()
 
     def process(self, ticket):
-        classification = self.classifier.classify(ticket.text)
+        try:
+            classification = self.classifier.classify(ticket.text)
+        except LLMProviderError:
+            classification = Classification(
+                intent="unclear_request",
+                urgency="medium",
+                confidence=0.0,
+            )
+            routing = RoutingDecision(
+                route="escalate",
+                reason="classification unavailable because the model provider failed",
+            )
+
+            self.decision_logger.log(
+                ticket_id=ticket.ticket_id,
+                classification=classification,
+                routing=routing,
+                retrieved_doc_ids=[],
+            )
+
+            return PipelineResult(
+                ticket_id=ticket.ticket_id,
+                classification=classification,
+                routing=routing,
+                retrieved_documents=[],
+                response=None,
+            )
 
         routing = decide_route(
             classification,

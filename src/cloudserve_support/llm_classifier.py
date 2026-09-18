@@ -15,11 +15,7 @@ class LLMClassifier:
                     user_prompt=ticket_text,
                 )
             except LLMProviderError:
-                return Classification(
-                    intent="unclear_request",
-                    urgency="medium",
-                    confidence=0.0,
-                )
+                raise
 
             try:
                 return parse_classification(response)
